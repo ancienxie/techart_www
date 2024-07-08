@@ -57,4 +57,4 @@
         <input type="submit" value="ОТПРАВИТЬ">
     </form>
 <?php include "./footer.php"?>
-<?php //text?>
+<?php //index.php?>
