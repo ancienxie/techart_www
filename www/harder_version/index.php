@@ -1,10 +1,32 @@
 <?php 
+    include "./vendor/autoload.php";
     include "./header.php";
     $db = new PDO("mysql:host=localhost;dbname=student","root","root");
     $sql = "SELECT * FROM news ORDER BY `date` DESC LIMIT 1";
     $res = $db->query($sql);
     $row = $res->fetch();
+
+    //dump($_SERVER);
 ?>
+
+    <div class="btn">
+        <button>1</button>
+    </div>
+    <div class="btn">
+        <button>2</button>
+    </div>
+    <div class="btn">
+        <button>3</button>
+    </div>
+    <div class="btn">
+        <button>4</button>
+    </div>
+    <div class="btn">
+        <button>5</button>
+    </div>
+
+
+
     <div style="background-image: url(./images/<?=$row['image']?>);" class="ban-image">
         <section   class="ban-image__text">
             <h1 class="ban-image__text--title"><?=$row['title']?></h1>
@@ -50,11 +72,31 @@
         </ul>
     </div>
 
-    <form action="mail.php" method="POST">
-        <input type="text" name="name">
-        <input type="email" name="email">
-        <input type="text" name="message">
+    <form class = "form1" action="mail.php" method="POST">
+        <div class="errorMessages"></div>
+        <label for="name">Имя пользователя</label>
+        <input type = "text" name="name">
+        <label for="email">Email пользователя</label>
+        <input type = "text" name="email">
+        <label for="message">Сообщение</label>
+        <textarea type = "text" name="message" rows="2" cols="10"></textarea>
         <input type="submit" value="ОТПРАВИТЬ">
     </form>
+
+    <?php 
+    $value = "";
+    
+    //if(preg_match("/([a-z0-9])(\d+)/", $value)){
+    //if(preg_match("/([a-z0-9])\.(ru|org|com)/", $value)){
+    //echo preg_replace("/[a-z0-9]+\.(ru|org|com)/","<b>$0<b/>", $value);
+        //echo $value;
+    //}
+    
+    
+    ?>
+
+    <?php echo preg_replace("/^(?!\d)[a-zA-Z0-9]+\@[a-zA-Z0-9]+\.(?!\d)[a-zA-Z0-9]{2,}+(\.(?!\d)[a-zA-Z0-9]{2,})*(\.(?!\d)[a-zA-Z0-9]{2,})*$/","<a href=mailto:metasea333@gmail.com>", "metasea333@gmail.com")?>text</a>
+
+    
 <?php include "./footer.php"?>
 <?php //index.php?>

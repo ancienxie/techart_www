@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => 'ancienxie/techart_project',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => '4498a6d07ab5a196ebd83ffab9c167b06781b403',
+        'type' => 'project',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        'ancienxie/techart_project' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '4498a6d07ab5a196ebd83ffab9c167b06781b403',
+            'type' => 'project',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'symfony/polyfill-mbstring' => array(
+            'pretty_version' => 'v1.30.0',
+            'version' => '1.30.0.0',
+            'reference' => 'fd22ab50000ef01661e2a31d850ebaa297f8e03c',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/polyfill-mbstring',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'symfony/var-dumper' => array(
+            'pretty_version' => 'v7.1.2',
+            'version' => '7.1.2.0',
+            'reference' => '5857c57c6b4b86524c08cf4f4bc95327270a816d',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/var-dumper',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);

@@ -1,0 +1,8 @@
+{
+    "name": "ancienxie/techart_project",
+    "description": "info",
+    "type": "project",
+    "require": {
+        "symfony/var-dumper": "^7.1"
+    }
+}

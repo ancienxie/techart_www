@@ -6,7 +6,7 @@
     	<link rel="stylesheet" href="./stylesheet/main.css">
     	<title>Галактический вестник</title>
     	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-
+    	
 	</head>
 	<body>
 	    <div class="top-menu">
